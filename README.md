@@ -1,38 +1,84 @@
-# create-svelte
+# sveltekit-template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A [SvelteKit](https://kit.svelte.dev/) and Tailwind CSS template with a few other defaults.
 
-## Creating a project
+Starting from the SvelteKit skeleton project, this template enables [TypeScript](https://www.typescriptlang.org/) for type annotations, [ESLint](https://eslint.org/) for code linting, [Prettier](https://prettier.io/) for code formatting, [Vitest](https://vitest.dev/) for unit testing, and [Playwright](https://playwright.dev/) for browser testing. [Tailwind CSS](https://tailwindcss.com/) is also included for rapid UI development.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Quickstart
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+This repository can be cloned using `degit`:
 
-# create a new project in my-app
-npm create svelte@latest my-app
+```sh
+# clone `sveltekit-template` into the `my-app` directory
+pnpx degit fboulnois/sveltekit-template my-app
 ```
+
+## Creating this project
+
+> Skip this step. This step was already run and is kept for posterity.
+
+This project was created using [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+
+The following steps were run to create this project:
+
+```sh
+# create a new sveltekit project in the `sveltekit-template` directory
+pnpm create svelte sveltekit-template
+
+# add tailwindcss as a postcss plugin
+pnpm add -D autoprefixer postcss prettier-plugin-tailwindcss tailwindcss
+```
+
+See the [project history](https://github.com/fboulnois/sveltekit-template/commits/main) for other changes.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install the dependencies using `pnpm install`.
 
-```bash
-npm run dev
+To check the code for issues when developing:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+```sh
+pnpm format
+pnpm lint
+pnpm check
+pnpm audit
+```
+
+To start a development server:
+
+```sh
+pnpm dev
+```
+
+## Testing
+
+Unit tests are run using [Vitest](https://vitest.dev/). To run unit tests:
+
+```sh
+pnpm test
+```
+
+End-to-end tests are run using [Playwright](https://playwright.dev/). Install the Playwright dependencies:
+
+```sh
+pnpx playwright install
+pnpx playwright install-deps
+```
+
+To run end-to-end tests:
+
+```sh
+pnpm e2e
 ```
 
 ## Building
 
-To create a production version of your app:
+To create a production version of the app:
 
-```bash
-npm run build
+```sh
+pnpm build
 ```
 
-You can preview the production build with `npm run preview`.
+The production build can be previewed with `pnpm preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
