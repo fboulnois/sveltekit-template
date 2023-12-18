@@ -1,8 +1,13 @@
 # sveltekit-template
 
-A [SvelteKit](https://kit.svelte.dev/) and Tailwind CSS template with a few other defaults.
+A [SvelteKit 2](https://kit.svelte.dev/) template with a few other defaults:
 
-Starting from the SvelteKit skeleton project, this template enables [TypeScript](https://www.typescriptlang.org/) for type annotations, [ESLint](https://eslint.org/) for code linting, [Prettier](https://prettier.io/) for code formatting, [Vitest](https://vitest.dev/) for unit testing, and [Playwright](https://playwright.dev/) for browser testing. [Tailwind CSS](https://tailwindcss.com/) is also included for rapid UI development.
+- [Tailwind CSS](https://tailwindcss.com/) for rapid UI development
+- [TypeScript](https://www.typescriptlang.org/) for type annotations
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io/) for code formatting
+- [Vitest](https://vitest.dev/) for unit testing
+- [Playwright](https://playwright.dev/) for browser testing
 
 ## Quickstart
 
@@ -10,7 +15,7 @@ This repository can be cloned using `degit`:
 
 ```sh
 # clone `sveltekit-template` into the `my-app` directory
-pnpx degit fboulnois/sveltekit-template my-app
+pnpm dlx degit fboulnois/sveltekit-template my-app
 ```
 
 ## Creating this project
@@ -61,8 +66,8 @@ pnpm test
 End-to-end tests are run using [Playwright](https://playwright.dev/). Install the Playwright dependencies:
 
 ```sh
-pnpx playwright install
-pnpx playwright install-deps
+pnpm exec playwright install
+pnpm exec playwright install-deps
 ```
 
 To run end-to-end tests:
