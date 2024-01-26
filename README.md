@@ -2,12 +2,12 @@
 
 A [SvelteKit v2](https://kit.svelte.dev/) template with a few other defaults:
 
-* [Tailwind CSS](https://tailwindcss.com/) for rapid UI development
-* [TypeScript](https://www.typescriptlang.org/) for type annotations
-* [ESLint](https://eslint.org/) for code linting
-* [Prettier](https://prettier.io/) for code formatting
-* [Vitest](https://vitest.dev/) for unit testing
-* [Playwright](https://playwright.dev/) for browser testing
+- [Tailwind CSS](https://tailwindcss.com/) for rapid UI development
+- [TypeScript](https://www.typescriptlang.org/) for type annotations
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io/) for code formatting
+- [Vitest](https://vitest.dev/) for unit testing
+- [Playwright](https://playwright.dev/) for browser testing
 
 ## Quickstart
 
