@@ -22,7 +22,7 @@ pnpm dlx degit fboulnois/sveltekit-template my-app
 
 > Skip this step. This step was already run and is kept for posterity.
 
-This project was created using [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project was created using [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
 The following steps were run to create this project:
 
