@@ -22,16 +22,14 @@ pnpm dlx degit fboulnois/sveltekit-template my-app
 
 > Skip this step. This step was already run and is kept for posterity.
 
-This project was created using [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This project was originally created using [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte),
+and recreated for Svelte 5 using [`sv`](https://github.com/sveltejs/cli).
 
 The following steps were run to create this project:
 
 ```sh
 # create a new sveltekit project in the `sveltekit-template` directory
-pnpm create svelte sveltekit-template
-
-# add tailwindcss as a postcss plugin
-pnpm add -D autoprefixer postcss prettier-plugin-tailwindcss tailwindcss
+pnpm dlx sv create sveltekit-template
 ```
 
 See the [project history](https://github.com/fboulnois/sveltekit-template/commits/main) for other changes.
