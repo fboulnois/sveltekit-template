@@ -20,6 +20,7 @@ pnpm dlx degit fboulnois/sveltekit-template my-app
 
 ## Creating this project
 
+> [!NOTE]
 > Skip this step. This step was already run and is kept for posterity.
 
 This project was originally created using [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte),
