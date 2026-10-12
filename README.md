@@ -1,11 +1,10 @@
 # sveltekit-template
 
-A [SvelteKit 2](https://kit.svelte.dev/) template with a few other defaults:
+A [SvelteKit 3](https://svelte.dev/docs/kit) template with a few other defaults:
 
 - [Tailwind CSS](https://tailwindcss.com/) for rapid UI development
 - [TypeScript](https://www.typescriptlang.org/) for type annotations
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io/) for code formatting
+- [Biome](https://biomejs.dev/) for code linting and formatting
 - [Vitest](https://vitest.dev/) for unit testing
 - [Playwright](https://playwright.dev/) for browser testing
 
@@ -85,4 +84,4 @@ pnpm build
 
 The production build can be previewed with `pnpm preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
