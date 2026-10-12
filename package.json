@@ -16,8 +16,8 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.5.15",
 		"@playwright/test": "^1.64.0",
-		"@sveltejs/adapter-auto": "^6.0.1",
-		"@sveltejs/kit": "^2.70.3",
+		"@sveltejs/adapter-auto": "^8.0.0",
+		"@sveltejs/kit": "^3.0.1",
 		"@sveltejs/vite-plugin-svelte": "^7.3.1",
 		"@tailwindcss/vite": "^4.3.3",
 		"svelte": "^5.57.2",
@@ -26,6 +26,10 @@
 		"typescript": "^6.0.3",
 		"vite": "^8.3.4",
 		"vitest": "^5.0.4"
+	},
+	"imports": {
+		"#lib": "./src/lib/index.js",
+		"#lib/*": "./src/lib/*"
 	},
 	"type": "module"
 }
